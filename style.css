@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+    padding: 1rem;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resultado{
+    background: hsl(224, 36%, 15%);
+    height: 80px;
+    border-radius: 10px;
+    font-size: 2em;
+    display:  flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    align-items: end;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.calc-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: hsl(223, 31%, 20%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+button  {
+    color: hsl(221, 14%, 31%);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 3px 1px  hsl(28, 16%, 65%);
+}
+.del {
+    color: white;
+    font-size: 20px;
+    background:  hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 1px  hsl(224, 28%, 35%);
+}
+.reset{
+    font-size: 20px;
+    color: white;
+    grid-column: 1/3;
+    background:  hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 1px  hsl(224, 28%, 35%);
+}
+.igual{
+    color: white;
+    grid-column: 3/5;
+    background: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 1px hsl(6, 70%, 34%);
+}
+.cal-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: white;
+    align-items: end;
+}
+
+.calc {
+    font-size: 32px;
+}
+
+#espera {
+   font-size: 20px;
+   position: absolute;
+   top: 15px;
+   right: 30px;
+   
+}
+.thems{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.thems p{
+    margin-right: 2rem;
+    font-size: 15px;
+}
+.botoness{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.switch-toggle{
+    background: hsl(224, 36%, 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    width: 90px;
+    height: 29px;
+    
+}
+.botones{
+    margin-left: 13px;
+    letter-spacing: 7px;
+    margin-bottom: 5px;
+}
+.switch-toggle input{
+    width: 30px;
+    height: 26px;
+    appearance: none;
+    outline: none;
+}
+.switch-toggle input:hover{
+  cursor: pointer;
+}
+.switch-toggle input:checked{
+    width: 17px;
+    height: 17px;
+    outline: none;
+    background: red;
+    border-radius: 20px;
+    appearance: none;
+}
+.switch-toggle input#three:checked{
+    background: hsl(177, 64%, 57%);
+}
+/* theme dos*/
+.tema-dos{
+    background: hsl(0, 0%, 90%);
+    
+}
+.d-dos{
+    background: hsl(0, 0%, 93%);
+    color: black;
+}
+.h-dos{
+    color: black;
+
+}
+.c-dos{
+    background: hsl(0, 5%, 81%);
+    
+}
+.borrar-dos{
+    color: white;
+    background:  hsl(185, 42%, 37%);
+    box-shadow: 0px 3px 1px  hsl(185, 58%, 25%);
+}
+.rese-dos{
+    background:  hsl(185, 42%, 37%);
+    box-shadow: 0px 3px 1px  hsl(185, 58%, 25%);
+}
+ .numeros-dos {
+    color: black;
+}
+.toggle{
+    background: hsl(0, 5%, 81%);
+}
+
+/* theme tres*/
+
+.tema-tres{
+    
+    background: hsl(268, 75%, 9%);
+    
+}
+.d-tres{
+    background: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+
+}
+.h-tres{
+    color:  hsl(52, 100%, 62%);
+
+}
+.c-tres{
+    background: hsl(268, 71%, 12%);
+    
+}
+.borrar-tres{
+    color: white;
+    background:  hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 1px  hsl(285, 91%, 52%);
+}
+.rese-tres{
+    background:  hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 1px  hsl(285, 91%, 52%);
+}
+ .numeros-tres {
+    color: hsl(52, 100%, 62%);
+    background: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px 1px  hsl(285, 91%, 52%);
+}
+.toggle-tres{
+    background: hsl(268, 71%, 12%);
+}
+.igual-tres{
+    color: hsl(198, 20%, 13%);
+    background: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px 1px  hsl(177, 92%, 70%);
+}
